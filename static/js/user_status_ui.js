@@ -168,28 +168,24 @@ function user_status_post_render() {
 export function initialize() {
     default_status_messages_and_emoji_info = [
         {
-            status_text: $t({defaultMessage: "Busy"}),
-            emoji: emoji.get_emoji_details_by_name("working_on_it"),
+            status_text: $t({defaultMessage: "On Break"}),
+            emoji: emoji.get_emoji_details_by_name("coffee"),
+        },
+        {
+            status_text: $t({defaultMessage: "Lunch"}),
+            emoji: emoji.get_emoji_details_by_name("rice"),
         },
         {
             status_text: $t({defaultMessage: "In a meeting"}),
             emoji: emoji.get_emoji_details_by_name("calendar"),
         },
         {
-            status_text: $t({defaultMessage: "Commuting"}),
-            emoji: emoji.get_emoji_details_by_name("bus"),
-        },
-        {
             status_text: $t({defaultMessage: "Out sick"}),
             emoji: emoji.get_emoji_details_by_name("hurt"),
         },
         {
-            status_text: $t({defaultMessage: "Vacationing"}),
+            status_text: $t({defaultMessage: "On Holiday"}),
             emoji: emoji.get_emoji_details_by_name("palm_tree"),
-        },
-        {
-            status_text: $t({defaultMessage: "Working remotely"}),
-            emoji: emoji.get_emoji_details_by_name("house"),
         },
     ];
 }
